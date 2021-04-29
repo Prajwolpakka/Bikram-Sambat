@@ -59,7 +59,7 @@ class _BikramSambatScreenState extends State<BikramSambatScreen> {
     todaysDate = todaysDate.add(Duration(days: 1));
     final difference = todaysDate.difference(now).inSeconds;
     Workmanager.cancelAll();
-    Workmanager.registerPeriodicTask('1', 'widgetBackgroundUpdate', frequency: Duration(hours: 12), initialDelay: Duration(seconds: difference));
+    Workmanager.registerPeriodicTask('1', 'widgetBackgroundUpdate', frequency: Duration(hours: 6), initialDelay: Duration(seconds: difference));
   }
 
   @override
